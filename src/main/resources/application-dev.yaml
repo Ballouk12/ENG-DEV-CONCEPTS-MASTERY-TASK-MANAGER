@@ -1,0 +1,32 @@
+spring:
+  config:
+    import: classpath:application-secrets.properties
+  datasource:
+    url: ${db.url}
+    username: ${db.username}
+    password: ${db.password}
+
+  cache:
+    type: redis
+
+  data:
+    redis:
+      host: ${REDIS_HOST}
+      port: ${REDIS_PORT}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      highlight_sql: true
+
+  flyway:
+    clean-disabled: false
+    clean-on-validation-error: true
+
+
+logging:
+  level:
+    root: INFO
+    com.example.taskmanager: DEBUG
