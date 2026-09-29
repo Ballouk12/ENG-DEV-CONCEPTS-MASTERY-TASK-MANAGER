@@ -2,7 +2,7 @@
 
 Ce projet est un labo pratique construit pour consolider des concepts Spring Boot 
 utilisés en environnement de production, à travers une petite API Task Manager 
-volontairement simple (User → Tasks).
+volontairement simple (User → Tasks)
 
 Plutôt que de me concentrer sur les fonctionnalités métier, l'objectif était de 
 comprendre et d'implémenter moi-même :
